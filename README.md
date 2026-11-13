@@ -4,7 +4,7 @@ Projeto desenvolvido para a disciplina de Integração Contínua.
 
 ## Tecnologias
 
-- Java 21
+- Java 25
 - Spring Boot
 - Maven
 - JUnit 5
