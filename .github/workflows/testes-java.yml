@@ -1,0 +1,17 @@
+name: Testes Automatizados - Calculadora
+on:
+    push:
+    pull_request:
+jobs:
+    testes:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Fazendo Checkout
+              uses: actions/checkout@v4
+            - name: Configurarando o Java
+              uses: actions/setup-java@v4
+              with:
+                distribution: 'temurin'
+                java-version: '25'
+            - name: Executando os testes java
+              run: mvn test
